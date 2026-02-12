@@ -27,8 +27,8 @@ MAX_EPISODES = 100  # try many episodes since BC has ~67% win rate
 CELL_SIZE = 30  # pixels per cell for display GIF
 OBS_BLOCK_SIZE = 16  # block size for observation frames (matching training)
 DRAW_GRID = True  # draw grid lines in observation (matching training)
-FPS = 8
-FRAME_DURATION = 1000 // FPS  # ms per frame
+FPS = 64
+FRAME_DURATION = 1000 // FPS  # ms per frame (~16ms)
 
 # Colors (matching train_and_play.py)
 BG_COLOR = (30, 30, 30)
