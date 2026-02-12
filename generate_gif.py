@@ -137,13 +137,8 @@ def main():
         print("No episodes completed. Something is wrong.")
         return
 
-    # For very long episodes, subsample to keep GIF small
-    total_frames = len(best_frames)
-    if total_frames > 500:
-        best_frames = best_frames[::2]
-        frame_duration = FRAME_DURATION * 2
-    else:
-        frame_duration = FRAME_DURATION
+    # No subsampling — keep all frames at target FPS
+    frame_duration = FRAME_DURATION
 
     print(f"Saving GIF with {len(best_frames)} frames, score={best_score}...")
 
