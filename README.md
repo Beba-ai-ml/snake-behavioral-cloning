@@ -75,6 +75,8 @@ observations alone.
 ### 1. Setup
 
 ```bash
+git clone https://github.com/Beba-ai-ml/snake-behavioral-cloning.git
+cd snake-behavioral-cloning
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
