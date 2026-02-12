@@ -1,5 +1,7 @@
 # Snake Behavioral Cloning
 
+![Snake BC agent gameplay](gameplay.gif)
+
 A complete pipeline for training a Snake AI via **Behavioral Cloning (BC)**: first
 train a DQN expert that wins consistently, then distill its behavior into a simpler
 CNN policy that learns purely from image-action pairs.
